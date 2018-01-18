@@ -14,7 +14,7 @@
 
 	conn.Open "Provider=sqloledb;Data Source=192.168.20.4;Initial Catalog=TestDB;User Id=dbuser;Password=Db0000000pwd!;" 
 
-	Set rs = conn.Execute("SEELECT * from SampleData")
+	Set rs = conn.Execute("SELECT * from SampleData")
 
 	Response.Write "<ul>"
 	Do While (Not rs.EOF)
