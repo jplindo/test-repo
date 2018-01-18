@@ -12,7 +12,7 @@
 	Set rs = Server.CreateObject("ADODB.Recordset")
 	Set conn = Server.CreateObject("ADODB.Connection")
 
-	conn.Open "Provider=sqloledb;Data Source=192.168.20.4;Initial Catalog=TestDB;User Id=dbuser;Password=Db0000000pwd!;" 
+	conn.Open "Provider=sqloledb;Data Source=192.168.20.4;Initial Catalog=TestDB;User Id=testdbuser;Password=Db0000000pwd!;" 
 
 	Set rs = conn.Execute("SELECT * from SampleData")
 
