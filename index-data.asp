@@ -7,7 +7,7 @@
     <h2>DateTime: <%= Now() %></h2>
     <h2>Server IP: <%= Request.ServerVariables("server_name") %></h2>
     <h2>Local IP: <%= Request.ServerVariables("local_addr") %></h2>
-	<p>&nbsp;</p>
+	<p>Data from database:</p>
 	 <%
 	Set rs = Server.CreateObject("ADODB.Recordset")
 	Set conn = Server.CreateObject("ADODB.Connection")
